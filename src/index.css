@@ -210,12 +210,19 @@ body {
   min-width: 48px;
   border-radius: 0.25rem;
   padding: 0.5rem;
+  margin-right: 0.7rem;
   font-size: 1rem;
-  background-color: red;
   color: #fff;
   cursor: pointer;
 }
 
+.editButton {
+  background-color: royalblue;
+}
+
+.deleteButton {
+  background-color: red;
+}
 .statusMsg {
   margin-top: 2rem;
 }
@@ -269,3 +276,12 @@ body {
   }
 
 }
+
+
+
+
+
+
+
+
+
