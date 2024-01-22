@@ -1,30 +1,18 @@
-// import React from "react";
-// import ReactDOM from "react-dom";
-// import "./index.css";
-// import App from "./App";
-// import { BrowserRouter } from "react-router-dom";
-
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(
-//   <React.StrictMode>
-//     <BrowserRouter>
-//       <App />
-//     </BrowserRouter>
-//   </React.StrictMode>
-// );
-
-
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { StoreProvider } from "easy-peasy";
+import store from "./store";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-       <App />
-    </BrowserRouter>
+    <StoreProvider store={store}>
+      <Router>
+        <Route path="/" component={App} />
+      </Router>
+    </StoreProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
