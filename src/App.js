@@ -16,7 +16,7 @@ function App() {
   const setPosts = useStoreActions((actions) => actions.setPosts);
 
   const { data, fetchError, isLoading } = useAxiosFetch(
-    "http://localhost:3500/posts"
+    "https://versed-buttoned-radio.glitch.me/posts"
   );
 
   useEffect(() => {
